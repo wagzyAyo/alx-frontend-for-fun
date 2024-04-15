@@ -2,13 +2,24 @@
     box-sizing: border-box;
 }
 
+
 a{
     text-decoration: none;
     color: rgb(209, 10, 10);
-    transition-delay: 300ms;
-    transition-duration: 1s;
+    position: relative;
 }
 
-a:hover{
-    text-decoration: underline;
+a::after{
+    content: "";
+    position: absolute;
+    background-color: rgb(209, 10, 10);
+    width: 0;
+    height: 2px;
+    left:0;
+    top:30px;
+    transition: width 300ms ease-in-out;
+}
+
+a:hover::after{
+    width:100%
 }
