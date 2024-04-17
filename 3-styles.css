@@ -27,6 +27,12 @@ input {
     
 }
 
+.menu-open-button:hover, 
+.menu-open-button:focus{
+    width: 80px;
+    height:80px
+}
+
 .menu-open:checked + .menu-open-button{
     width:50px;
     height: 50px;
@@ -70,7 +76,7 @@ a.menu-item{
     text-decoration: none;
     color: #f5f5f5;
     font-size: 1rem;
-    transition: visibility 0s ease-in-out;
+    transition: visibility 0s ease-in-out, opacity 0.5s ease-in-out;
 }
 
 a.menu-item:focus, 
@@ -79,25 +85,22 @@ a.menu-item:hover{
     color:red
 }
 
-.menu-open:checked ~ .menu-item:nth-child(1){
+.menu-open:checked ~ .menu-item{
     visibility: visible;
     transition-delay: 0.1s;
 }
 
 .menu-open:checked ~ .menu-item:nth-child(2){
-    visibility: visible;
     transition-delay: 0.2s;
 }
 .menu-open:checked ~ .menu-item:nth-child(3){
-    visibility: visible;
     transition-delay: 0.3s;
 }
 .menu-open:checked ~ .menu-item:nth-child(4){
-    visibility: visible;
     transition-delay: 0.4s;
+    visibility: visible;
 }
 
 .menu-open:checked ~ .menu-item:nth-child(5){
-    visibility: visible;
-    transition-delay: 0.5s;
+    transition-delay: 0.5s;  
 }
