@@ -54,6 +54,11 @@ input[type="checkbox"]:checked::before{
 .toggle-label .toggle-inner:after {
     content: "No";
     order:1;
+    position: relative;
+    right: 70px;
+    font-size: 35px;
+    font-weight: 400;
+    color: rgb(191, 187, 187);
 }
 
 .toggle-cb:checked + .toggle-label .toggle-inner:after {
